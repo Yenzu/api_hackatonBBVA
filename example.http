@@ -1,0 +1,17 @@
+
+###
+GET  http://localhost:3000
+
+###
+POST http://localhost:3000/api/user
+content-type: application/json
+
+{
+    "RUC": "1020256311",
+    "pass": "123344",
+    "email":"prueba@correo.com",
+    "celular":"957963698"
+}
+
+
+###
