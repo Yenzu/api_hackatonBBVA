@@ -36,7 +36,7 @@ router.post("/api/user", async (req, res) => {
   const user = req.body;
   try{
     let newUser = await pool.query(
-        `INSERT INTO usuario ( RUC, pass, email, celular )
+        `INSERT INTO usuario ( RUC, pass, email, celular, motivo )
         VALUES
         (?,?,?,?,?)`,
         [user.RUC, user.pass, user.email, user.celular, user.motivo]
