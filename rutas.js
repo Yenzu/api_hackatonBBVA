@@ -15,11 +15,11 @@ function castField(field, useDefaultTypeCasting) {
 }
 
 const baseDatos = {
-    host: process.env.DB_IP || "127.0.0.1",
+    host: process.env.DB_IP || "remotemysql.com",
     port: process.env.DB_PORT || "3306",
-    user: "",
-    password: "",
-    database: process.env.DB_NAME || "dbHackaton",
+    user: "82UZLCNGgY",
+    password: "Y1iy8wbhVb",
+    database: process.env.DB_NAME || "82UZLCNGgY",
     charset: "utf8mb4", //COLLATION
     typeCast: castField, // determina si los valores de una columna deben convertirse a tipos de JavaScript.
   };

@@ -1,4 +1,4 @@
-use dbHackaton;
+use 82UZLCNGgY;
 #========== ELIMINAR TABLAS SI EXISTEN
 SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS usuario;
@@ -10,5 +10,6 @@ CREATE TABLE usuario (
     pass                VARCHAR(100)        NULL,    
     email               VARCHAR(80)         NULL, 
     celular             VARCHAR(20)         NULL, 
+    motivo              VARCHAR(200)        NULL,
     CONSTRAINT pk_usuario00 PRIMARY KEY (RUC)
 );
